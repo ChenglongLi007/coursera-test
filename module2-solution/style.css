@@ -6,25 +6,44 @@ h1 {
     text-align: center;
 }
 
-section {
+.content {
     background-color: gray;
-    border: 1px;
+    border: 1px solid black;
     padding: 10px;
-    margin: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .title {
-    width: 5%;
+    width: 20%;
     background-color: red;
     margin: 0px;
-    border: 1px solid;
+    border: 1px solid black;
+    text-align: center;
+}
+#title1 {
+    background-color: pink;
+}
+
+#title2 {
+    background-color: red;
+    color: white;
+}
+#title3 {
+    background-color: yellow;
+}
+.row {
+    width: 100%;
 }
 
 @media (min-width: 992px) {
-    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, 
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-4-margin, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, 
     .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left;
-        border: 1px solid black;
+        margin: 0px;
+        border: 1px solid green;
     }
     .col-lg-1 {
         width: 8.33%;
@@ -37,6 +56,9 @@ section {
     }
     .col-lg-4 {
         width: 33%;
+    }
+    .col-lg-4-margin {
+        width: 31.5%;
     }
     .col-lg-5 {
         width: 41.66%;
@@ -65,10 +87,11 @@ section {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7,
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-6-margin, .col-md-7,
     .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
-        border: 1px solid black;
+        margin: 0px;
+        border: 1px solid green;
     }
     .col-md-1 {
         width: 8.33%;
@@ -88,6 +111,12 @@ section {
     .col-md-6 {
         width: 50%;
     }
+    .col-md-6-margin {
+        width: 49%;
+        margin-left: 1%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     .col-md-7 {
         width: 58.33%;
     }
@@ -106,4 +135,12 @@ section {
     .col-md-12 {
         width: 100%;
     }
+    .col-md-12-margin {
+        width: 99%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
+
